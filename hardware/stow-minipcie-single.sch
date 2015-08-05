@@ -77,4 +77,50 @@ F 3 "" H 6150 3700 60  0000 C CNN
 	1    6150 3700
 	1    0    0    -1  
 $EndComp
+Text GLabel 9900 2700 2    60   Input ~ 0
+USB_D+
+Text GLabel 9900 2800 2    60   Input ~ 0
+USB_D-
+Text GLabel 5150 3400 0    60   Input ~ 0
+USB_D+
+Text GLabel 5150 3300 0    60   Input ~ 0
+USB_D-
+Text GLabel 5150 3050 0    60   Input ~ 0
+3v3
+Text GLabel 8000 3800 0    60   Input ~ 0
+3v3
+Text GLabel 2750 3200 0    60   Input ~ 0
+3v3
+Wire Wire Line
+	5150 3300 5200 3300
+Wire Wire Line
+	5150 3400 5200 3400
+Wire Wire Line
+	9850 2700 9900 2700
+Wire Wire Line
+	9850 2800 9900 2800
+Wire Wire Line
+	8000 3800 8050 3800
+Wire Wire Line
+	5150 3050 5200 3050
+Wire Wire Line
+	2750 3200 2800 3200
+Wire Wire Line
+	2800 3200 2800 3300
+Text GLabel 7100 3000 2    60   Input ~ 0
+FT_TX
+Text GLabel 7100 3100 2    60   Input ~ 0
+FT_RX
+Wire Wire Line
+	7050 3000 7100 3000
+Wire Wire Line
+	7100 3100 7050 3100
+Text GLabel 4350 3800 2    60   Input ~ 0
+FT_TX
+Text GLabel 4350 3900 2    60   Input ~ 0
+FT_RX
+Wire Wire Line
+	4300 3800 4350 3800
+Wire Wire Line
+	4300 3900 4350 3900
 $EndSCHEMATC
