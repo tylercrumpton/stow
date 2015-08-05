@@ -1,4 +1,4 @@
-update=7/14/2015 11:10:03 PM
+update=8/4/2015 11:46:37 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,4 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=C:/Users/Tyler/Documents/repos/CrumpSchemes/crumpschemes
+LibName31=G:/Repos/CrumpSchemes/crumpschemes
