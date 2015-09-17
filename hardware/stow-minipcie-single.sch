@@ -166,4 +166,30 @@ Text GLabel 4500 4100 2    60   Input ~ 0
 3v3
 Wire Wire Line
 	4350 4100 4500 4100
+Text GLabel 7100 3800 2    60   Input ~ 0
+RESET
+Wire Wire Line
+	7050 3800 7100 3800
+Text GLabel 1900 3950 0    60   Input ~ 0
+RESET
+$Comp
+L R R?
+U 1 1 55FA6083
+P 1950 3650
+F 0 "R?" V 2030 3650 40  0000 C CNN
+F 1 "10k" V 1957 3651 40  0000 C CNN
+F 2 "" V 1880 3650 30  0000 C CNN
+F 3 "" H 1950 3650 30  0000 C CNN
+	1    1950 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 3400 0    60   Input ~ 0
+3v3
+Wire Wire Line
+	1900 3950 2300 3950
+Wire Wire Line
+	1950 3950 1950 3900
+Connection ~ 1950 3950
+Wire Wire Line
+	1850 3400 1950 3400
 $EndSCHEMATC
