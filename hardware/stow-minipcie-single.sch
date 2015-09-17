@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:crumpschemes
+LIBS:stow-minipcie-single-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,12 +48,12 @@ $EndDescr
 $Comp
 L SM200 U?
 U 1 1 55C19545
-P 3550 3750
-F 0 "U?" H 3550 5450 60  0000 C CNN
-F 1 "SM200" H 3550 1600 60  0000 C CNN
-F 2 "" H 4250 5000 60  0000 C CNN
-F 3 "" H 4250 5000 60  0000 C CNN
-	1    3550 3750
+P 3050 3800
+F 0 "U?" H 3050 5500 60  0000 C CNN
+F 1 "SM200" H 3050 1650 60  0000 C CNN
+F 2 "" H 3750 5050 60  0000 C CNN
+F 3 "" H 3750 5050 60  0000 C CNN
+	1    3050 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -89,7 +90,7 @@ Text GLabel 5150 3050 0    60   Input ~ 0
 3v3
 Text GLabel 8000 3800 0    60   Input ~ 0
 3v3
-Text GLabel 2750 3200 0    60   Input ~ 0
+Text GLabel 2250 3250 0    60   Input ~ 0
 3v3
 Wire Wire Line
 	5150 3300 5200 3300
@@ -104,9 +105,9 @@ Wire Wire Line
 Wire Wire Line
 	5150 3050 5200 3050
 Wire Wire Line
-	2750 3200 2800 3200
+	2250 3250 2300 3250
 Wire Wire Line
-	2800 3200 2800 3300
+	2300 3250 2300 3350
 Text GLabel 7100 3000 2    60   Input ~ 0
 FT_TX
 Text GLabel 7100 3100 2    60   Input ~ 0
@@ -115,12 +116,54 @@ Wire Wire Line
 	7050 3000 7100 3000
 Wire Wire Line
 	7100 3100 7050 3100
-Text GLabel 4350 3800 2    60   Input ~ 0
+Text GLabel 3850 3250 2    60   Input ~ 0
 FT_TX
-Text GLabel 4350 3900 2    60   Input ~ 0
+Text GLabel 3850 3350 2    60   Input ~ 0
 FT_RX
+Text GLabel 7100 3300 2    60   Input ~ 0
+FT_CTS
+Text GLabel 7100 3200 2    60   Input ~ 0
+FT_RTS
 Wire Wire Line
-	4300 3800 4350 3800
+	7050 3200 7100 3200
 Wire Wire Line
-	4300 3900 4350 3900
+	7100 3300 7050 3300
+Text GLabel 3850 4550 2    60   Input ~ 0
+FT_RTS
+Text GLabel 3850 3450 2    60   Input ~ 0
+FT_CTS
+Wire Wire Line
+	3800 3250 3850 3250
+Wire Wire Line
+	3800 3350 3850 3350
+Wire Wire Line
+	3800 3450 3850 3450
+Wire Wire Line
+	3800 4550 3850 4550
+Text GLabel 7100 3700 2    60   Input ~ 0
+FT_RI
+Wire Wire Line
+	7050 3700 7100 3700
+Text GLabel 4450 4650 2    60   Input ~ 0
+FT_RI
+$Comp
+L R R?
+U 1 1 55FA5C22
+P 4350 4350
+F 0 "R?" V 4430 4350 40  0000 C CNN
+F 1 "10k" V 4357 4351 40  0000 C CNN
+F 2 "" V 4280 4350 30  0000 C CNN
+F 3 "" H 4350 4350 30  0000 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4650 4450 4650
+Connection ~ 4350 4650
+Wire Wire Line
+	4350 4650 4350 4600
+Text GLabel 4500 4100 2    60   Input ~ 0
+3v3
+Wire Wire Line
+	4350 4100 4500 4100
 $EndSCHEMATC
