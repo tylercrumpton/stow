@@ -192,4 +192,58 @@ Wire Wire Line
 Connection ~ 1950 3950
 Wire Wire Line
 	1850 3400 1950 3400
+Text GLabel 7200 4100 2    60   Input ~ 0
+PWREN
+Text GLabel 7200 4200 2    60   Input ~ 0
+SLEEP
+Text GLabel 4150 3050 2    60   Input ~ 0
+PWREN
+$Comp
+L R R?
+U 1 1 55FA6345
+P 4050 2750
+F 0 "R?" V 4130 2750 40  0000 C CNN
+F 1 "10k" V 4057 2751 40  0000 C CNN
+F 2 "" V 3980 2750 30  0000 C CNN
+F 3 "" H 4050 2750 30  0000 C CNN
+	1    4050 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 3050
+Wire Wire Line
+	4050 3050 4050 3000
+Text GLabel 4200 2500 2    60   Input ~ 0
+3v3
+Wire Wire Line
+	4050 2500 4200 2500
+Wire Wire Line
+	3800 3050 4150 3050
+Wire Wire Line
+	7050 4100 7200 4100
+Wire Wire Line
+	7050 4200 7200 4200
+Text GLabel 4700 2850 2    60   Input ~ 0
+SLEEP
+$Comp
+L R R?
+U 1 1 55FA6654
+P 4600 2550
+F 0 "R?" V 4680 2550 40  0000 C CNN
+F 1 "47k" V 4607 2551 40  0000 C CNN
+F 2 "" V 4530 2550 30  0000 C CNN
+F 3 "" H 4600 2550 30  0000 C CNN
+	1    4600 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 2850
+Wire Wire Line
+	4600 2800 4600 3150
+Text GLabel 4750 2300 2    60   Input ~ 0
+3v3
+Wire Wire Line
+	4600 2300 4750 2300
+Wire Wire Line
+	4700 2850 4600 2850
+Wire Wire Line
+	4600 3150 3800 3150
 $EndSCHEMATC
