@@ -323,4 +323,28 @@ Wire Wire Line
 	4050 2500 4050 2400
 Wire Wire Line
 	4050 2400 4150 2400
+Text GLabel 10300 2300 2    60   Input ~ 0
+LED_WPAN
+Text GLabel 10300 2400 2    60   Input ~ 0
+LED_WLAN
+Text GLabel 10300 2500 2    60   Input ~ 0
+LED_WWAN
+Wire Wire Line
+	10250 2500 10300 2500
+Wire Wire Line
+	10250 2400 10300 2400
+Wire Wire Line
+	10250 2300 10300 2300
+Text GLabel 3850 5550 2    60   Output ~ 0
+LED_WWAN
+Text GLabel 3850 5350 2    60   Output ~ 0
+LED_WLAN
+Text GLabel 3850 5250 2    60   Output ~ 0
+LED_WPAN
+Wire Wire Line
+	3800 5250 3850 5250
+Wire Wire Line
+	3800 5350 3850 5350
+Wire Wire Line
+	3800 5550 3850 5550
 $EndSCHEMATC
