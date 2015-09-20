@@ -87,9 +87,9 @@ USB_D+
 Text GLabel 5600 3300 0    60   Input ~ 0
 USB_D-
 Text GLabel 5600 3050 0    60   Input ~ 0
-3v3
+VCC
 Text GLabel 8400 3800 0    60   Output ~ 0
-3v3
+VCC
 Text GLabel 2250 3250 0    60   Input ~ 0
 FT_3v3
 Text GLabel 7550 3000 2    60   Output ~ 0
@@ -546,4 +546,48 @@ F 3 "" H 5650 4200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5650 4200
+$Comp
+L CONN_01X05 P2
+U 1 1 55FF44AF
+P 6500 2150
+F 0 "P2" H 6500 2450 50  0000 C CNN
+F 1 "USB" V 6600 2150 50  0000 C CNN
+F 2 "" H 6500 2150 60  0000 C CNN
+F 3 "" H 6500 2150 60  0000 C CNN
+	1    6500 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 55FF454C
+P 6800 1850
+F 0 "#PWR07" H 6800 1850 30  0001 C CNN
+F 1 "GND" H 6800 1780 30  0001 C CNN
+F 2 "" H 6800 1850 60  0000 C CNN
+F 3 "" H 6800 1850 60  0000 C CNN
+	1    6800 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 1900 1    60   Input ~ 0
+VCC
+Text GLabel 6600 1900 1    60   Input ~ 0
+FT_3v3
+Text GLabel 6400 1900 1    60   Input ~ 0
+USB_D-
+Text GLabel 6300 1900 1    60   Input ~ 0
+USB_D+
+Wire Wire Line
+	6800 1850 6800 1800
+Wire Wire Line
+	6800 1800 6700 1800
+Wire Wire Line
+	6700 1800 6700 1950
+Wire Wire Line
+	6600 1900 6600 1950
+Wire Wire Line
+	6500 1950 6500 1900
+Wire Wire Line
+	6400 1900 6400 1950
+Wire Wire Line
+	6300 1950 6300 1900
 $EndSCHEMATC
