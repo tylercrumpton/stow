@@ -78,9 +78,9 @@ F 3 "" H 6600 3700 60  0000 C CNN
 	1    6600 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 2700 2    60   Input ~ 0
+Text GLabel 10300 2700 2    60   Output ~ 0
 USB_D+
-Text GLabel 10300 2800 2    60   Input ~ 0
+Text GLabel 10300 2800 2    60   Output ~ 0
 USB_D-
 Text GLabel 5600 3400 0    60   Input ~ 0
 USB_D+
@@ -88,10 +88,10 @@ Text GLabel 5600 3300 0    60   Input ~ 0
 USB_D-
 Text GLabel 5600 3050 0    60   Input ~ 0
 3v3
-Text GLabel 8400 3800 0    60   Input ~ 0
+Text GLabel 8400 3800 0    60   Output ~ 0
 3v3
 Text GLabel 2250 3250 0    60   Input ~ 0
-3v3
+FT_3v3
 Wire Wire Line
 	5600 3300 5650 3300
 Wire Wire Line
@@ -108,7 +108,7 @@ Wire Wire Line
 	2250 3250 2300 3250
 Wire Wire Line
 	2300 3250 2300 3350
-Text GLabel 7550 3000 2    60   Input ~ 0
+Text GLabel 7550 3000 2    60   Output ~ 0
 FT_TX
 Text GLabel 7550 3100 2    60   Input ~ 0
 FT_RX
@@ -118,11 +118,11 @@ Wire Wire Line
 	7550 3100 7500 3100
 Text GLabel 3850 3250 2    60   Input ~ 0
 FT_TX
-Text GLabel 3850 3350 2    60   Input ~ 0
+Text GLabel 3850 3350 2    60   Output ~ 0
 FT_RX
 Text GLabel 7550 3300 2    60   Input ~ 0
 FT_CTS
-Text GLabel 7550 3200 2    60   Input ~ 0
+Text GLabel 7550 3200 2    60   Output ~ 0
 FT_RTS
 Wire Wire Line
 	7500 3200 7550 3200
@@ -130,7 +130,7 @@ Wire Wire Line
 	7550 3300 7500 3300
 Text GLabel 3850 4550 2    60   Input ~ 0
 FT_RTS
-Text GLabel 3850 3450 2    60   Input ~ 0
+Text GLabel 3850 3450 2    60   Output ~ 0
 FT_CTS
 Wire Wire Line
 	3800 3250 3850 3250
@@ -144,7 +144,7 @@ Text GLabel 7550 3700 2    60   Input ~ 0
 FT_RI
 Wire Wire Line
 	7500 3700 7550 3700
-Text GLabel 4450 4650 2    60   Input ~ 0
+Text GLabel 4450 4650 2    60   Output ~ 0
 FT_RI
 $Comp
 L R R?
@@ -163,10 +163,10 @@ Connection ~ 4350 4650
 Wire Wire Line
 	4350 4650 4350 4600
 Text GLabel 4500 4100 2    60   Input ~ 0
-3v3
+FT_3v3
 Wire Wire Line
 	4350 4100 4500 4100
-Text GLabel 7550 3800 2    60   Input ~ 0
+Text GLabel 7550 3800 2    60   Output ~ 0
 RESET
 Wire Wire Line
 	7500 3800 7550 3800
@@ -184,7 +184,7 @@ F 3 "" H 1950 3650 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1850 3400 0    60   Input ~ 0
-3v3
+FT_3v3
 Wire Wire Line
 	1900 3950 2300 3950
 Wire Wire Line
@@ -192,9 +192,9 @@ Wire Wire Line
 Connection ~ 1950 3950
 Wire Wire Line
 	1850 3400 1950 3400
-Text GLabel 7650 4100 2    60   Input ~ 0
+Text GLabel 7650 4100 2    60   Output ~ 0
 PWREN
-Text GLabel 7650 4200 2    60   Input ~ 0
+Text GLabel 7650 4200 2    60   Output ~ 0
 SLEEP
 Text GLabel 4150 3050 2    60   Input ~ 0
 PWREN
@@ -212,10 +212,8 @@ $EndComp
 Connection ~ 4050 3050
 Wire Wire Line
 	4050 3050 4050 3000
-Text GLabel 4200 2500 2    60   Input ~ 0
-3v3
-Wire Wire Line
-	4050 2500 4200 2500
+Text GLabel 4150 2400 2    60   Input ~ 0
+FT_3v3
 Wire Wire Line
 	3800 3050 4150 3050
 Wire Wire Line
@@ -239,7 +237,7 @@ Connection ~ 4600 2850
 Wire Wire Line
 	4600 2800 4600 3150
 Text GLabel 4750 2300 2    60   Input ~ 0
-3v3
+FT_3v3
 Wire Wire Line
 	4600 2300 4750 2300
 Wire Wire Line
@@ -249,7 +247,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 4900 6450 4950
 Wire Wire Line
-	6300 4950 7050 4950
+	5650 4950 7050 4950
 Wire Wire Line
 	6600 4950 6600 4900
 Wire Wire Line
@@ -298,4 +296,31 @@ Wire Wire Line
 	5450 4250 5450 4000
 Wire Wire Line
 	5450 4000 5650 4000
+Text GLabel 5550 4500 0    60   Output ~ 0
+FT_3v3
+Wire Wire Line
+	5650 4200 5650 4550
+Wire Wire Line
+	5550 4500 5650 4500
+$Comp
+L C C?
+U 1 1 55FF0BD6
+P 5650 4750
+F 0 "C?" H 5650 4850 40  0000 L CNN
+F 1 "100nF" H 5656 4665 40  0000 L CNN
+F 2 "" H 5688 4600 30  0000 C CNN
+F 3 "" H 5650 4750 60  0000 C CNN
+	1    5650 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 4500
+Connection ~ 6300 4950
+Text GLabel 5600 2950 0    60   Input ~ 0
+FT_3v3
+Wire Wire Line
+	5650 2950 5600 2950
+Wire Wire Line
+	4050 2500 4050 2400
+Wire Wire Line
+	4050 2400 4150 2400
 $EndSCHEMATC
