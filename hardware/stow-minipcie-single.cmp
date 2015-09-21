@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by Cvpcb (2014-12-04 BZR 5312)-product   date = 9/21/2015 12:01:40 AM
+
+BeginCmp
+TimeStamp = /55FA6B1E;
+Reference = 12MHz1;
+ValeurCmp = CRYSTAL;
+IdModule  = Crystals:Crystal_HC49-SD_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = /55FF0BD6;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C19570;
+Reference = P1;
+ValeurCmp = mPCIe;
+IdModule  = _CrumpPrints:MPCIe_full_card;
+EndCmp
+
+BeginCmp
+TimeStamp = /55FF44AF;
+Reference = P2;
+ValeurCmp = USB;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x05;
+EndCmp
+
+BeginCmp
+TimeStamp = /55FA6083;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55FA6345;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55FA5C22;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55FA6654;
+Reference = R4;
+ValeurCmp = 47k;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C19545;
+Reference = U1;
+ValeurCmp = SM200;
+IdModule  = _CrumpPrints:SM200;
+EndCmp
+
+BeginCmp
+TimeStamp = /55C1978C;
+Reference = U2;
+ValeurCmp = FT232RL;
+IdModule  = Housings_SSOP:SSOP-24_5.3x8.2mm_Pitch0.65mm;
+EndCmp
+
+EndListe
