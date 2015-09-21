@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-04 BZR 5312)-product   date = 9/21/2015 12:01:40 AM
+Cmp-Mod V01 Created by Cvpcb (2014-12-04 BZR 5312)-product   date = 9/21/2015 2:26:27 AM
 
 BeginCmp
 TimeStamp = /55FA6B1E;
@@ -67,7 +67,7 @@ BeginCmp
 TimeStamp = /55C1978C;
 Reference = U2;
 ValeurCmp = FT232RL;
-IdModule  = Housings_SSOP:SSOP-24_5.3x8.2mm_Pitch0.65mm;
+IdModule  = Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm;
 EndCmp
 
 EndListe
