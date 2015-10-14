@@ -686,17 +686,17 @@
     )
   )
 
-  (module _CrumpPrints:MPCIe_full_card (layer F.Cu) (tedit 561DEE60) (tstamp 55FFA725)
+  (module _CrumpPrints:MPCIe_full_card (layer F.Cu) (tedit 561DF3B5) (tstamp 561E00F7)
     (at 86.6 107)
     (path /55C19570)
-    (fp_text reference P1 (at 12.15 -15.2 90) (layer F.SilkS)
+    (fp_text reference P1 (at 12.15 -15.2 90) (layer F.SilkS) hide
       (effects (font (thickness 0.15)))
     )
     (fp_text value mPCIe (at 14.1 -15.25 90) (layer F.SilkS) hide
       (effects (font (thickness 0.15)))
     )
     (fp_line (start 15 -48.05) (end -15 -48.05) (layer F.SilkS) (width 0.01))
-    (fp_text user "IO Connector Region" (at 0.55 -45.65) (layer F.SilkS) hide
+    (fp_text user "" (at 0.65 -50.25) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 15 -42.95) (end -15 -42.95) (layer F.SilkS) (width 0.01))
